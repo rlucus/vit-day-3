@@ -10,15 +10,47 @@
 </head>
 
 <body>
-  <div>
-    <h1>
-      Welcome Veterans to Day 3.
-    </h1>
-    <p>
-      Introduction to Cascading Style Sheets (CSS)
-    </p>
-  </div>
+  <header>
+    <div>
+      <h1>
+        Welcome Veterans to Day 3.
+      </h1>
+      <p>
+        Introduction to Cascading Style Sheets (CSS)
+      </p>
+    </div>
+  </header>
+  <section class="cryptic" id="cSection">
+    <ul class="lists">
+      OH NOES!!! You found my secret shopping list
+      <li id="red-item">bananas</li>
+      <li>apples</li>
+      <li id="blue-item">grapes</li>
+    </ul>
+  </section>
+  <div class="button" onclick="decrypt()">Don't Click</div>
 
+  <aside>
+    <p> Click the following picture to learn everything about CSS </p>
+  </aside>
+  <a href="http://bfy.tw/JdZ4" target="_blank">
+    <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67802a8a1c82021e7b15b4b0d0938922&auto=format&fit=crop&w=500&q=60"
+      alt="CSS image" class="image">
+  </a>
+
+  <section>
+
+  </section>
+  <section class="igrid">
+    <div><img src="img/0.PNG" alt="0"></div>
+    <div><img src="img/1.PNG" alt="1"></div>
+    <div><img src="img/2.PNG" alt="2"></div>
+    <div><img src="img/3.PNG" alt="3"></div>
+    <div><img src="img/4.PNG" alt="4"></div>
+    <div><img src="img/5.PNG" alt="5"></div>
+    <div><img src="img/6.PNG" alt="6"></div>
+    <div><img src="img/7.PNG" alt="7"></div>
+  </section>
   <!-- Activity: Build your own web page with styles -->
   <!-- Start with forking this repository -->
 
@@ -49,6 +81,16 @@
      2.Use CSS animation for awesome transitions in colors or size
      3. Create a grid of images that align 4x2 (4 images across with 2 rows, a total of 8 images)
     -->
+  <footer id=foot>
+    Made by me
+  </footer>
 </body>
+
+<script>
+  function decrypt() {
+    var el = document.getElementById("cSection");
+    el.classList.toggle("cryptic");
+  }
+</script>
 
 </html>

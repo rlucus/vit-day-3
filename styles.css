@@ -1,6 +1,76 @@
 /* Add your custom css here */
+@keyframes gToy {
+  0%   {background-color:red; left:0px;}
+  25%  {background-color:yellow; left:200px;}
+  50%  {background-color:blue; left:400px;}
+  75%  {background-color:green; left:200px;}
+  100% {background-color:red; left:0px;}
+}
 
 body {
   background: orange;
   color: white;
+}
+
+.cryptic {
+  font-family: webdings;
+}
+
+.lists {
+  background: black;
+  color: yellowgreen;
+  padding: 30px;
+  display: inline-block;
+}
+
+#red-item {
+  color: red;
+  font-size: 20px;
+}
+
+#blue-item {
+  color: blue;
+  font-size: 20px;
+}
+
+.image {
+  border-radius: 15px 50px;
+}
+
+.button {
+  padding: 30px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  animation-name: gToy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;  
+}
+
+#foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: darkblue;
+}
+
+aside:hover {
+  background: blue;
+}
+
+.igrid {
+  display: grid;
+  padding: 5px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-gap: 5px;
 }
